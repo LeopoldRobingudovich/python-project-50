@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+[project]
+name = "hexlet-code"
+version = "0.1.0"
+description = "My second project"
+authors = [
+	{name = "Wokky", email = "leopoldrobingudovic@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
+
+[project.scripts]
+gendiff = "gendiff.scripts.gendiff:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["gendiff"]
+
+
+
+[dependency-groups]
+dev = [
+    "ruff>=0.17.1",
+]

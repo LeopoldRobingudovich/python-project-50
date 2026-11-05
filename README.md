@@ -23,6 +23,12 @@ cd python-project-50
 ## Использование
 
 <!-- Добавьте примеры запуска и запись asciinema — именно это смотрит работодатель -->
+```bash
+uv tool install .
+gendiff fixtures/file1.json fixtures/file2.json
+```
+
+[![asciicast](https://asciinema.org/a/afjrZP3KehBdbjp7.svg)](https://asciinema.org/a/afjrZP3KehBdbjp7)
 
 ---
 

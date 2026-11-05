@@ -1,0 +1,14 @@
+line-length = 80
+
+[lint]
+preview = true
+select = ["E", "F", "I", "C90", "UP", "B", "S", "FURB", "RUF"]
+ignore = ["Q"]
+
+[lint.per-file-ignores]
+"__init__.py" = ["unused-import"]
+"tests/**" = ["assert"]
+
+# Блок, отвечающий за кавычки
+[format]
+quote-style = "preserve"
