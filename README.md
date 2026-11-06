@@ -28,6 +28,7 @@ uv tool install .
 gendiff fixtures/file1.json fixtures/file2.json
 ```
 
+
 [![asciicast](https://asciinema.org/a/afjrZP3KehBdbjp7.svg)](https://asciinema.org/a/afjrZP3KehBdbjp7)
 
 ---
