@@ -6,7 +6,8 @@ sync:
 
 
 tree:
-	tree -I '__pycache__|.venv'
+	tree -I '__pycache__|.venv |tempCodeRunnerFile.py'
+
 
 
 build:
