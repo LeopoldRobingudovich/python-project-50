@@ -14,15 +14,22 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = []
 
+
 [project.scripts]
 gendiff = "gendiff.scripts.gendiff:main"
+
 
 [tool.hatch.build.targets.wheel]
 packages = ["gendiff"]
 
 
+[tool.coverage.report]
+fail_under = 60
+
 
 [dependency-groups]
 dev = [
+    "pytest>=9.2.0",
+    "pytest-cov>=7.1.0",
     "ruff>=0.17.1",
 ]

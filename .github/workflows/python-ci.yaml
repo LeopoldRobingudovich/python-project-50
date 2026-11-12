@@ -1,0 +1,24 @@
+name: Python CI
+on: push
+jobs:
+    lint-test:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "Текущий воркфлоу называется $GITHUB_WORKFLOW"
+
+            - uses: actions/checkout@v7
+
+            - name: Install UV and Python
+              uses: astral-sh/setup-uv@68559e99cc807c1eb7e9238fd43a15bba460eec2 # v10.3.3
+
+            - name: Install dependencies
+              run: make sync
+
+            - name: Lint code with Ruff
+              run: make lint
+
+            - name: Testing and code coverage
+              run: make test-coverage
+
+
+
