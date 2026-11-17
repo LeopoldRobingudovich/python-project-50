@@ -38,4 +38,4 @@ format:
 
 # Запуск тестов и процент покрытия кода тестами
 test-coverage:
-        uv run pytest --cov=gendiff tests/
+	uv run pytest --cov=gendiff tests/
