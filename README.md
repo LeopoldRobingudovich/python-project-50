@@ -1,5 +1,8 @@
 # Вычислитель отличий (Python)
 
+[![Python CI](https://github.com/LeopoldRobingudovich/python-project-50/actions/workflows/python-ci.yaml/badge.svg)](https://github.com/LeopoldRobingudovich/python-project-50/actions/workflows/python-ci.yaml)
+
+
 [![hexlet-check](https://github.com/LeopoldRobingudovich/python-project-50/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/LeopoldRobingudovich/python-project-50/actions)
 
 В этом проекте отрабатывается работа с коллекциями. Изучаются способы построения и обхода деревьев. Вы познакомитесь с разными форматами данных (JSON, YAML), научитесь их парсить и формировать. Начнете писать тесты (pytest) и освоите разработку через них. Познакомитесь с непрерывной интеграцией (CI) и элементами экстремального программирования (XP)

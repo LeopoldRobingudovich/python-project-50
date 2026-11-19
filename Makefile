@@ -24,6 +24,11 @@ install:
 	uv tool install dist/*.whl
 
 
+# Автоматически исправляет безопасные ошибки (включая сортировку импортов)
+fix:
+	uv run ruff check --fix gendiff tests
+
+
 # Только проверяет код и стиль, ничего не меняет. Выводи красивое оформление на гитхаб.
 lint:
 	uv run ruff check --output-format=github gendiff tests
