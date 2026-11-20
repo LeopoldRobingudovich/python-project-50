@@ -27,6 +27,10 @@ packages = ["gendiff"]
 fail_under = 53
 
 
+[tool.coverage.run]
+omit = ["*/tempCodeRunnerFile.py"]
+
+
 [dependency-groups]
 dev = [
     "pytest>=9.2.0",

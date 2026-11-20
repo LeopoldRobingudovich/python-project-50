@@ -3,7 +3,7 @@ line-length = 80
 [lint]
 preview = true
 select = ["E", "F", "I", "C90", "UP", "B", "S", "FURB", "RUF"]
-ignore = ["Q", "FURB118", "RUF100"]
+ignore = ["FURB118"]
 
 [lint.per-file-ignores]
 # В init-модулях допустимы неиспользуемые импорты
