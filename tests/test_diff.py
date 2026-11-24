@@ -1,11 +1,11 @@
 from pathlib import Path
-from gendiff.generate_diff import generate_diff
+
 import pytest
+
+from gendiff.generate_diff import generate_diff
 
 JSON1 = "tests/test_data/file1.json"
 JSON2 = "tests/test_data/file2.json"
-# YAML1 = "tests/test_data/file1.yaml"
-# YAML2 = "tests/test_data/file2.yaml"
 YML1 = "tests/test_data/file1.yml"
 YML2 = "tests/test_data/file2.yml"
 
@@ -24,6 +24,3 @@ def read_file(filename):
 def test_diff(file1: str, file2: str):
     diff_str = read_file('expected.txt').rstrip('\n')
     assert generate_diff(file1, file2) == diff_str
-
-
-# test_diff()

@@ -4,7 +4,6 @@ from gendiff.parsers import parse_file
 def generate_diff(file_path1: str, file_path2: str) -> str:
     data1: dict = parse_file(file_path1)
     data2: dict = parse_file(file_path2)
-
     added = [
         ("+", key, value)
         for key, value in data2.items()

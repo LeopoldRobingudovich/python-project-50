@@ -32,7 +32,7 @@ gendiff fixtures/file1.json fixtures/file2.json
 ```
 
 ## Видеоиструкция
-[![asciicast](https://asciinema.org/a/afjrZP3KehBdbjp7.svg)](https://asciinema.org/a/afjrZP3KehBdbjp7)
+[![asciicast](https://asciinema.org/a/X96UY0NRtheCXUzo.svg)](https://asciinema.org/a/X96UY0NRtheCXUzo)
 
 ---
 
