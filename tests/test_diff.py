@@ -1,7 +1,13 @@
 from pathlib import Path
-
 from gendiff.generate_diff import generate_diff
-from gendiff.parsers import parse_json
+import pytest
+
+JSON1 = "tests/test_data/file1.json"
+JSON2 = "tests/test_data/file2.json"
+# YAML1 = "tests/test_data/file1.yaml"
+# YAML2 = "tests/test_data/file2.yaml"
+YML1 = "tests/test_data/file1.yml"
+YML2 = "tests/test_data/file2.yml"
 
 
 def get_test_data_path(filename):
@@ -12,17 +18,12 @@ def read_file(filename):
     return get_test_data_path(filename).read_text()
 
 
-def get_dict():
-    dict1 = parse_json("tests/test_data/file1.json")
-    dict2 = parse_json("tests/test_data/file2.json")
-    return dict1, dict2
-
-
-def test_diff():
+@pytest.mark.parametrize(
+    "file1,file2", [(JSON1, JSON2), (YML1, YML2)], ids=['json', 'yml']
+)
+def test_diff(file1: str, file2: str):
     diff_str = read_file('expected.txt').rstrip('\n')
-    dict1, dict2 = get_dict()
-
-    assert generate_diff(dict1, dict2) == diff_str
+    assert generate_diff(file1, file2) == diff_str
 
 
-test_diff()
+# test_diff()

@@ -12,7 +12,9 @@ authors = [
 ]
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "pyyml>=0.0.2",
+]
 
 
 [project.scripts]
